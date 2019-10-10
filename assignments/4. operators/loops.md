@@ -15,6 +15,25 @@ var bank_balance = 303.91;
 var amount = 0;
 // your code goes here
 
+while(amount < bank_balance){
+
+	amount = amount + PHONE_PRICE;
+	if(amount < SPENDING_THRESHOLD ) {
+		amount = amount + ACCESSORY_PRICE;
+	}
+	console.log(amount);
+}
+
+function calculateTax() {
+	amount = amount + (amount * TAX_RATE);
+	return amount;
+}
+
+function formatAmount() {
+	var formatTotal = calculateTax();
+	return (`$ ${formatTotal.toFixed(2)}`);
+}
+
 
 ```
  ⛑ Answer of the above will `$334.76`.
@@ -22,11 +41,11 @@ var amount = 0;
 2. 🎖 Write a for loop that will iterate from 0 to 20. For each iteration, it will check if the current number is even or odd, and report that to the screen using `alert` (e.g. "2 is even").
 ```js
 // your code goes here
-for(var i = 0 ; i < 20 ; i=(i+1)){
-    if(i%2 == 0){
+for (var i = 0 ; i < 20 ; i=(i+1)){
+    if(i%2 == 0) {
         alert(i + " is even");
     }
-    else{
+    else {
         alert(i + " is odd")
     }
 }
@@ -83,7 +102,7 @@ var i = 1;
 while(i <= 20){
     i=(i+1);
     if(i % 2 == 0){
-        console.log(i + " is even!!!")
+        console.log(i + " is even")
     }
 }
 ```

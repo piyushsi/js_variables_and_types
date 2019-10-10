@@ -9,6 +9,49 @@
     * [ ] Mul
     * [ ] Div
 
+<script>
+    function cal (){
+    var a = +prompt("Enter first number");
+    var b = +prompt("Enter second number");
+    var Add = a+b;
+    var Sub = a-b;
+    var Mul = a*b;
+    var Div = a/b;
+    var c =+prompt("enter(1,2,3,4) 1.Add, 2.Sub, 3.Mul, 4.Div");
+      if (c ==1){
+        alert(Add);
+      } 
+      else if (c ==2){
+        alert(Sub);
+      } 
+      else if (a<b){
+        alert(`Number Two is larger then Number one`);
+      } 
+      else if (c ==3){
+        alert(Mul);
+      } 
+      else if (c == 4){
+        alert(Div);
+      }
+      else {
+        alert('wrong Input');
+      }
+      }
+      var name = prompt ("Enter You Name");
+      alert (`Good Morining ` + name);
+      var yes = prompt("Want to use Calculator choose Yes or No");
+      if (yes=="yes") {
+        cal();
+      }
+      else if(yes=="Yes"){
+        cal();
+      }
+      else {
+        alert('Thank You');
+      }
+  </script>
+
+
 2. 🎖Write a if else statement which checks if the status is single `console.log` the message `John is single` or else `John is married`
 ```js
 var firstName = 'John';

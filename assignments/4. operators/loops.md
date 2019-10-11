@@ -21,8 +21,8 @@ while(amount < bank_balance){
 	if(amount < SPENDING_THRESHOLD ) {
 		amount = amount + ACCESSORY_PRICE;
 	}
-	console.log(amount);
 }
+console.log(amount, amount > bank_balance ? "Hey" : "Hello");
 
 function calculateTax() {
 	amount = amount + (amount * TAX_RATE);
